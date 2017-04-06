@@ -1,0 +1,16 @@
+<!--
+     Created by Peter Brady on 06/04/2017.
+     X00115070
+-->
+
+<resources>
+    <string name="app_name">Android API</string>
+    <string name="android_image">Android APK Header Image</string>
+    <string name="api_level">API</string>
+    <string name="api_label">Level</string>
+    <string name="display_button">Display</string>
+    <string name="empty_value">Required Field!</string>
+    <string name="non_numeric_value">Value must be numeric!</string>
+    <string name="api_output">Name : %1$s \nPlatform Version : %2$s \nAPI Level : %3$s \nYear : %4$s</string>
+    <string name="api_not_found">API level not found!</string>
+</resources>

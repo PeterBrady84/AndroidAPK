@@ -1,0 +1,91 @@
+<!--
+     Created by Peter Brady on 06/04/2017.
+     X00115070
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/androidLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <ImageView
+        android:id="@+id/androidImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/androidLabel"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/android_image"
+        android:cropToPadding="false"
+        android:padding="10dp"
+        android:src="@drawable/android"/>
+
+    <EditText
+        android:id="@+id/apiLevelEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/androidImage"
+        android:layout_centerHorizontal="true"
+        android:ems="5"
+        android:hint="@string/api_level"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/apiLevelLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/androidImage"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@id/apiLevelEditText"
+        android:paddingTop="7dp"
+        android:text="@string/api_label"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/input_api_validation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apiLevelEditText"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/displayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_api_validation"
+        android:layout_centerHorizontal="true"
+        android:text="@string/display_button"/>
+
+    <View
+        android:id="@+id/line_break"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/displayButton"
+        android:layout_margin="10dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/apiInformationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_break"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</RelativeLayout>
